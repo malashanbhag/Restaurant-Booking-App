@@ -1,0 +1,36 @@
+<div class="jumbotron" ng-controller="bookingCtrl">
+    
+    <form class="form-group row" style="align:center" ng-submit="confirmBooking()">
+        <div class="form-group row">
+                <div class="col-xs-6 col-md-offset-3">
+                    <label><h3>{{value}} Booking</h3></label>
+                </div>
+        </div>
+            <div class="form-group row">
+                <div class="col-xs-6 col-md-offset-3">
+                    <label>Customer Name</label><input type="text" class="form-control" ng-model="name" placeholder="Customer Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6 col-md-offset-3">
+                    <label>Contact Number</label><input type="text" class="form-control" ng-model="number" placeholder="Contact Number">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6 col-md-offset-3">
+                    <label>Email</label><input type="text" class="form-control" ng-model="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6 col-md-offset-3">
+                    <label>Tables Required</label><input type="text" class="form-control" ng-model="tables" placeholder="Tables Required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-6 col-md-offset-3">
+                    <label>Timing</label><input type="text" class="form-control" ng-model="timing" placeholder="Timing">
+                </div>
+            </div>
+            <p class="text-center"><button type="submit" class="btn btn-success">Confirm Booking</button></p>
+        </form>
+</div>

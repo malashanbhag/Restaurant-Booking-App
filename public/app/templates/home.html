@@ -1,0 +1,11 @@
+<div class="jumbotron" ng-repeat="item in RestList">
+        <h5>Name: {{item.name}}</h5>
+        <h5>Location: {{item.location}}</h5>
+        <h5>Tables Available: {{item.availability}}</h5>
+        <h5>Table capacity: {{item.capacity}}</h5>
+        <h5>Cost per person: {{item.cost}}</h5>
+        <h5>Cuisines served: {{item.cuisines}}</h5><br>
+        <button class="btn btn-success" ui-sref="Book({name:item.name})">Book</button>
+        <button class="btn btn-primary" ui-sref="Edit({name:item.name, availability:item.availability , capacity:item.capacity , _id:item._id })">Edit</button>
+        <button class="btn btn-danger" ng-click="DeleteRestaurant({id:item._id})">Delete</button>
+</div>

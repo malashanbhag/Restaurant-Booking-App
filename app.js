@@ -1,0 +1,25 @@
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var morgan = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var restuarant = require('./database/restuarant');
+var booking = require('./database/booking');
+var review = require('./database/booking');
+var rest = require('./routes/restuarant');
+var bookRestuarant = require('./routes/booking');
+var review = require('./routes/review');
+var app = express();
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+app.use(morgan('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', rest);
+app.use('/book',bookRestuarant);
+app.use('/review',review);
+
+module.exports = app;

@@ -1,0 +1,11 @@
+<div ng-repeat="i in result">
+    <div class="jumbotron">
+        <h5>Restuarant : {{i.restuarantName}}</h5>
+        <h5>Customer : {{i.customerName}}</h5>
+        <h5>Contact : {{i.contactNo}}</h5>
+        <h5>Email : {{i.emailId}}</h5>
+        <h5>Tables required : {{i.tablesRequired}}</h5>
+        <h5>Timings : {{i.timing}}</h5>
+        <button class="btn btn-danger" ng-click="DeleteBooking({id:i._id})">Delete</button>
+    </div>
+</div>

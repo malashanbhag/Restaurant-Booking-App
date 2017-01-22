@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="service.js"></script>
+    <script src="router.js"></script>
+    <script src="app/controllers/viewController.js"></script>
+    <script src="app/controllers/bookingController.js"></script>
+    <script src="app/controllers/restuarantController.js"></script>
+    <script src="app/controllers/editRestaurant.js"></script>
+    <script src="app/controllers/reviewController.js"></script>
+</head>
+<body ng-app="myApp">
+
+    <nav class="navbar navbar-inverse" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="View Restuarant">View Restuarants</a></li>
+        <li><a ui-sref="View Bookings">View Bookings</a></li>
+        <li><a ui-sref="Add Restuarant">Add Restuarants</a></li>
+        <li><a ui-sref="Reviews">Reviews</a></li>
+    </ul>
+    </nav>
+<div ui-view></div>
+</body>
+</html>
